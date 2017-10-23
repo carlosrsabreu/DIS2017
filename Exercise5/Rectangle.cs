@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 using System.Linq;
 
 namespace Exercise5
@@ -64,6 +65,19 @@ namespace Exercise5
                     max = Math.Max( max, point.Y );
                 }
                 return max - Y;
+            }
+        }
+
+        public virtual Point this[int aIndex]
+        {
+            get
+            {
+                return mPoints[aIndex];
+            }
+            set
+            {
+                if ( aIndex < 0 && aIndex > 3 ) throw new IndexOutOfRangeException();
+                mPoints[aIndex] = value;
             }
         }
 

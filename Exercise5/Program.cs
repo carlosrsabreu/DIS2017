@@ -17,6 +17,7 @@ namespace Exercise5
                 if ( ! shape.IsValid() ) continue;
                 area += shape.ComputeArea();
             }
+
             Console.WriteLine( $"Total Area: { area }");
             Console.ReadKey();
         }
