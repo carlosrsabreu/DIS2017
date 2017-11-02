@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RickGuitarShop2
+﻿namespace RickGuitarShop2
 {
     public class Guitar
     {
