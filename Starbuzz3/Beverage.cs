@@ -19,12 +19,12 @@ namespace Starbuzz3
 
         protected abstract void AddCondiments();
 
-        protected void BoilWater()
+        protected virtual void BoilWater()
         {
             Console.WriteLine( "Boiling water." );
         }
 
-        protected void PourInCup()
+        protected virtual void PourInCup()
         {
             Console.WriteLine( "Pouring into cup." );
         }
